@@ -1,0 +1,156 @@
+.main {
+    width: 100%;
+    overflow: hidden;
+    transform: scale(1);
+  }
+@keyframes rotate{
+    0%{
+      transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(0);
+    }
+    100%{
+      transform: perspective(400px) rotateZ(20deg) rotateX(-40deg) rotateY(-360deg);
+    }
+  }
+  .stars{
+    transform: perspective(500px);
+    transform-style: preserve-3d;
+    position: absolute;
+    perspective-origin: 50% 100%;
+    left: 50%;
+    animation: rotate 90s infinite linear ;
+    bottom: 0;
+    /* background:#ddd;
+    opacity:0.99; */
+  }
+  .star{
+    width: 2px;
+    height: 2px;
+    background: #f7f7b8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+  .boxs{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    padding-left: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .slogan{
+      background: rgba(255, 255, 255, 0.4);
+      font-size: 48px;
+      height: 96px;
+      line-height: 96px;
+      color: aliceblue;
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      margin-top: 15%;
+  }
+  .content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+  .myself{
+      height: 500px;
+      background: rgba(255, 255, 255, 0.4);
+  }
+  .myselfLeft{
+    height: 100%;
+    width: 500px;
+    place-items: center;
+    position: relative;
+  }
+  .backGround{
+    background: radial-gradient(200% 130% at bottom center, #f7f7b6,#e96f92,#1b2947);
+    background: radial-gradient(200% 130% at top center,#1b2947 10%,#75517d 40%,#e96f92 65%,#f7f7b6);
+    background-attachment: fixed;
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+  }
+  .myPic{
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0, 0.3);
+    transition: 0.3 ease-out;
+    transition: opacity 0.3s ease-out;
+  }
+  .myPic img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+  }
+  .myPic:hover{
+    box-shadow: 0 1px 45px 0 rgba(0,0,0, 0.3);
+    opacity: 0.7;
+  }
+  .myself .introduction{
+    position: relative;
+    height: 100px;
+    width: 500px;
+    background: rgba(255, 255, 255, 0.4);
+    z-index: 4;
+    text-align: center;
+  }
+  .myself .introduction h2{
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  .myself .introduction span{
+    font-size: 20px;
+  }
+  .myselfLeft ul{
+    display: flex;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    padding-left: 0%;
+  }
+  .myselfLeft ul li{
+    margin: 0 10px;
+    list-style-type: none;
+    text-align: center;
+  }
+  .myselfLeft ul li a{
+    display: block;
+    height: 50px;
+    width: 50px;
+    background: #fff;
+    border-radius: 50px;
+    line-height: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .myselfLeft li img{
+    height: 20px;
+    width: 20px;
+  }
+  .myselfLeft:hover ul>li>a{
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .myselfLeft:hover ul>li:nth-child(2) a{
+    transition-delay: 0.1s;
+  }
+  .myselfLeft:hover ul>li:nth-child(3) a{
+    transition-delay: 0.2s;
+  }
+  .myselfLeft:hover ul>li:nth-child(4) a{
+    transition-delay: 0.3s;
+  }
+  .myselfLeft:hover ul>li:nth-child(5) a{
+    transition-delay: 0.4s;
+  }
+
+  

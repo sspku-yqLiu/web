@@ -1,0 +1,85 @@
+
+.box{
+    position: relative;
+    height: 240px;
+    width: 240px;
+    background: aliceblue;
+    font-size: 42px;
+    text-align: center;
+    line-height: 240px;
+    color: #ffff;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.box.Extension{
+    background: rgba(9, 109, 217, 0.5);
+}
+.box.npm{
+    background: rgba(250,173,20, 0.5);
+}
+.box.Search{
+    background: rgba(235,47,150, 0.5);
+}
+
+.box.Docs{
+    background: rgba(82,196,26, 0.5);
+}
+.box.Others{
+    background: rgba(114,46,209, 0.5);
+}
+.box.Extension:first-child:hover{
+    background: linear-gradient(90deg,#03a0f4, #eb2f96, #fadb14, #03a9f4);
+    background-size: 400% ;
+}
+.box.npm:first-child:hover{
+    background: linear-gradient(90deg,#faad14, #eb2f96, #13c2c2, #faad14);
+    background-size: 400% ;
+}
+.box.Search:first-child:hover{
+    background: linear-gradient(90deg, #eb2f96, #13c2c2, #faad14,#eb2f96);
+    background-size: 400% ;
+}
+.box.Docs:first-child:hover{
+    background: linear-gradient(90deg,#52c41a, #08989C, #03a9f4, #52c41a);
+    background-size: 400% ;
+}
+.box.Others:first-child:hover{
+    background: linear-gradient(90deg,#722ed1, #eb2f96, #13c2c2, #722ed1);
+    background-size: 400% ;
+}
+/* .box:last-child:hover{
+
+    background: linear-gradient(90deg,#fa7199, #f5ce62, #e43603, #fa7199);
+    background-size: 400% ;
+} */
+.box:first-child:before{
+/* .box:last-child:before{ */
+    content: "";
+    position: absolute;
+    background: inherit;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.5s;
+    /* color: white; */
+}
+/* .box:last-child:hover:before, */
+.box:first-child:hover:before{
+    opacity: 1;
+    z-index: -1;
+}
+.box:hover{
+    z-index: 1;
+    animation: glow 8s linear infinite;
+}
+@keyframes glow {
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
