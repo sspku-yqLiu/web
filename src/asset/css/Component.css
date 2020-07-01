@@ -4,13 +4,7 @@
     justify-content: center;
     flex-wrap: wrap;
 }
-.Intro{
-    text-align: center;
-}
-.Intro>h1{
-    margin-top:50px ;
-    font-size: 50px;
-}
+
 .users{
 
     display: flex;
@@ -27,7 +21,10 @@
     padding-left: 10px;
 }
 .extensionMain{
-    background: antiquewhite;
+    /* background: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     height: 100%;
     z-index: -2;
 }
@@ -36,14 +33,22 @@
     margin:auto;
     
 }
+
+
+
+/* 跑马灯 */
 .ant-carousel .slick-slide {
     text-align: center;
-    height: 650px;
-    line-height: 650px;
+    height: 900px;
+    line-height: 900px;
     background: #364d79;
     overflow: hidden;
   }
   
   .ant-carousel .slick-slide h3 {
     color: #fff;
+  }
+  #canvas{
+      height: 80%;
+      width: 100%;
   }

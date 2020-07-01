@@ -8,46 +8,33 @@
  */ 
  import React, { Component } from 'react';
  import { Carousel } from 'antd';
- import TitleButton from '../component/TitleButton'
+ import TitleButton from '../component/util/TitleButton'
  import '../asset/css/Component.css'
+import CHHeader from '../component/ComponentHelper/CHHead';
+import Feature from '../component/ComponentHelper/Feature';
+import MaterialCenter from '../component/ComponentHelper/MaterialCenter';
+import Users from '../component/ComponentHelper/Users';
  export default class WebComponentHelper extends Component {
      render() {
          return (
              <div className="extensionMain">
-                 <div className = "title">
-                    <TitleButton name = {`文档`}></TitleButton>
-                    <TitleButton name = {`特性`}></TitleButton>
-                        <h1>hello world</h1>
-                    <TitleButton name = {`演示`}></TitleButton>
-                    <TitleButton name = {`下载`}></TitleButton>
-                 </div>
+                 <CHHeader/>
+                 <img src = {require('../asset/img/CH/LOGO.svg')} style={{height:'600px',padding:'auto',marginTop:'20px'}}/>
                  <div className = "Intro">
-                    <h1>一个强大的、面向组件库的插件</h1>
+                    <h1>DevUIHelper</h1>
+                    <h2>The Most Powful VSCode Extension For Components</h2>
+                </div>
+                    <Feature></Feature>
+                    <MaterialCenter/>
+                    <Users></Users>
                     <div className = "users">
                         <h2>正在使用: </h2>
-                        <span className="components">
-                            <img src={require("../asset/img/devui.svg")} ></img><a href = "https://devui.design/home">DevUI</a>
-                        </span>
+
                     </div>
-                    <div className = 'demo'>
-                    <Carousel autoplay     width= '50%'>
-                        <div>
-                        <h3>1</h3>
-                        </div>
-                        <div>
-                        <h3>2</h3>
-                        </div>
-                        <div>
-                        <h3>3</h3>
-                        </div>
-                        <div>
-                        <h3>4</h3>
-                        </div>
-                    </Carousel>
-                    </div>
-                 </div>
+
+
              </div>
          )
-     }
+     }   
  }
  

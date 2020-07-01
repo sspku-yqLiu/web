@@ -7,7 +7,7 @@
  * @FilePath: \web\src\component\Box.js
  */ 
 import React, { Component } from 'react'
-import '../asset/css/box.css'
+import '../../asset/css/box.css'
 
 export default class Box extends Component {
     constructor(props) {

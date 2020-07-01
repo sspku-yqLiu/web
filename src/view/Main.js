@@ -7,11 +7,11 @@
  * @FilePath: \react\web\src\view\Main.js
  */ 
 import React, { Component } from 'react'
-import Box from '../component/Box';
-import Header from '../component/Header';
+import Box from '../component/Main/Box';
+import Header from '../component/Main/Header';
 import 'antd/dist/antd.css'
 import '../asset/css/Main.css'
-import Myself from '../component/Myself';
+import Myself from '../component/Main/Myself';
 
 export default class Main extends Component {
     constructor(props) {

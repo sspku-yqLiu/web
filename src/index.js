@@ -13,10 +13,8 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import{ BrowserRouter as Router,Link,Route,Redirect} from 'react-router-dom'
 import WebComponentHelper from './view/WebComponentHelper';
-import Analysis from './component/Analysis'
 import Main from './view/Main';
 import Others from './view/Others';
-import SoftwareTest from './view/SoftwareTest';
 
 ReactDOM.render(
   <Router>
@@ -26,7 +24,7 @@ ReactDOM.render(
     <Route path='/npm' component={WebComponentHelper}></Route>
     <Route path='/Search' component={WebComponentHelper}></Route>
     <Route path='/Docs' component={WebComponentHelper}></Route>
-    <Route path='/Others' exact component={SoftwareTest}></Route>
+    <Route path='/Others' exact component={WebComponentHelper}></Route>
   </Router>,
   document.getElementById('root')
 );

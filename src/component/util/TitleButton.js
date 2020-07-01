@@ -7,7 +7,7 @@
  * @FilePath: \web\src\component\TitleButton.js
  */ 
 import React, { Component } from 'react'
-import '../asset/css/TitleBox.css'
+import '../../asset/css/TitleBox.css'
 export default class TitleButton extends Component {
     constructor(props) {
         super(props)
