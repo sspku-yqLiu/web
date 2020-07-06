@@ -7,22 +7,22 @@
  * @FilePath: \web\src\component\TitleButton.js
  */ 
 import React, { Component } from 'react'
-import '../../asset/css/TitleBox.css'
+import '../../asset/css/TitleButton.css'
 export default class TitleButton extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             name:props.name
+             name:props.name,
+             color:props.bgColor
         }
-    }
-    
+    }   
     render() {
         return (
             <div>
-                <button className="titleButton">
+                <button className="titleButton" >
                     {this.state.name}
-                    <span></span>
+                    <span ></span>
                 </button>
             </div>
         )

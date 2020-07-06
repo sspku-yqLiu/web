@@ -35,13 +35,13 @@ export default class Header extends Component {
                 </a>
                 </Menu.Item>
                 <SubMenu  title="文章导航">
-                <Menu.ItemGroup title="Item 1">
-                    <Menu.Item key="setting:1">Option 1</Menu.Item>
-                    <Menu.Item key="setting:2">Option 2</Menu.Item>
+                <Menu.ItemGroup title="普通使用">
+                    <Menu.Item key="setting:1">补全提示</Menu.Item>
+                    <Menu.Item key="setting:2">悬停提示</Menu.Item>
                 </Menu.ItemGroup>
-                <Menu.ItemGroup title="Item 2">
-                    <Menu.Item key="setting:3">Option 3</Menu.Item>
-                    <Menu.Item key="setting:4">Option 4</Menu.Item>
+                <Menu.ItemGroup title="@表达式">
+                    <Menu.Item key="setting:3">表达式简介</Menu.Item>
+                    <Menu.Item key="setting:4">表达式教程</Menu.Item>
                 </Menu.ItemGroup>
                 </SubMenu>
                 <Menu.Item key="contectMe" icon={<MailOutlined />}>

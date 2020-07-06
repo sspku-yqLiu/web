@@ -1,0 +1,31 @@
+.materialCenter{
+    background-color: #fefefe;
+}
+.materials{
+    margin: 0 15%;
+    display: flex;
+    flex: 0 0 1;
+    flex-wrap: wrap;
+}
+.MaterialSearch{
+    height: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    flex: 0 0 1;
+}
+
+.MaterialSearch h1{
+    height:80px ;
+    width: 50%;
+    line-height: 80px;
+    background: rgba(255,255,255,0.4);
+    margin-top: 225px;
+    color: white;
+    font-size: 60px;
+}
+
+

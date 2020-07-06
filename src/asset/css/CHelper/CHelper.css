@@ -27,7 +27,29 @@
 .ant-carousel .slick-slide h3 {
     color: #fff;
 }
+.materialCenterIntro {
+    font-size: 16px;
+    padding-top: 40px;
+    padding-left: 50px;
+    background: rgba(65,105, 225, 0.2);
+    display: flex;
+    flex:0 0 1;
+    flex-wrap: wrap;
+    align-items: center;
+    /* background: rgba(65, 105, 225, 0.2); */
+}
+.materialCenterIntro>.left{
+    flex-basis: 34%;
+    padding:0 20px ;
 
+}
+.materialCenterIntro>.right{
+    flex-basis: 65%;
+    padding:0 20px ;
+}
+.materialCenterIntro>h1{
+    flex-basis: 100%;
+}
 
 /* FEATURE */
 
@@ -53,26 +75,24 @@
     font-size: 16rem;
     /* color: white; */
 }
-/* 物料中心 */
-.MaterialCenter{
-    font-size: 16px;
-    padding-top: 40px;
-    padding-left: 50px;
-    background:  rgba(65, 105, 225, 0.2);
-}
+
 
 /* 用户 */
 .Users{
     font-size: 16px;
     padding-top: 40px;
     padding-left: 50px;
-    background:  rgba(218, 165, 32, 0.2);
+    background:  rgba(244, 244, 244,1);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 .componentsUsers{
     flex-basis: 70%;
+    justify-content: start;
+    flex-direction: row;
+    display: flex;
+    flex: 1 1 auto;
 }
 
 .featureLeft li {
@@ -96,4 +116,60 @@
 
 .Intro>h2 {
     font-size: 25px;
+}
+
+/* 主页面 */
+.extensionMain{
+    /* background: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    z-index: -2;
+}
+
+.badge>*{
+    margin: 1px 2px;
+}
+/* footer */
+.footer{
+    background:black ;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    flex:0 0 1;
+    display: flex;
+}
+.footer *{
+    color: white;
+    opacity: 1;
+}
+.footer img{
+    filter: invert(100%);
+    /* background: white; */
+    max-height:48px ;
+}
+.footer li{
+    margin: 20px 0;
+    font-size: 24px;
+    flex-basis: 100%;
+    list-style-type:none;
+}
+.footer li>a{
+    padding-left: 10px;
+    color: white;
+    line-height: 48px;
+}
+.footerLeft{
+    flex-basis: 30%;
+}
+.footerLeft ul{
+    padding-left: 0;
+}
+.footerRight{
+    align-items: center;
+    flex-basis: 70%;
+}
+.footer>h1{
+    flex-basis: 100%;
 }

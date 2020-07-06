@@ -6,11 +6,18 @@ export default class Users extends Component {
         return (
             <div className = 'Users'>
                 <h1 style={{flexBasis:'100%'}}><b>加入我们,让组件库变得更好!</b></h1>
-                <h2 flexBasis='30%'>与我们合作的组件库:</h2>
+                <h2 style={{lineHeight:'240px',flexBasis:'300px'}}>与我们合作的开源社区:</h2>
                 <div className="componentsUsers">
-                <ComponentUser name = "DevUI"></ComponentUser>
+                    <QuadBox imgurl = "devui.svg" content='DevUI'/>          
+                    <QuadBox imgurl = "ICE.png" content='ICE'/>
                 </div>
-                <h2 width='30%'>我们的用户来自于:</h2>
+                <div style={{flexBasis:'100%'}}></div>
+                <h2 style={{lineHeight:'140px',flexBasis:'300px'}} >我们服务于:</h2>
+                <div className="componentsUsers">
+                    <QuadBox imgurl = "PKU.png" content='北大-华为云实验班' height='120px' layOutDirection='horizontal'/>          
+                    <QuadBox imgurl = "huawei.png" content='华为云社区' height='120px' layOutDirection='horizontal'/>          
+                   
+                </div>
             </div>
         )
     }
@@ -20,9 +27,8 @@ function ComponentUser(props){
         'DevUI':"https://devui.design/home"
     }
     return (
-        <span className="componentsUsers">
-            <QuadBox content = 'DevUI' imgurl = '../../asset/img/devui.svg'></QuadBox>
-            <img src={require("../../asset/img/devui.svg")} ></img><a href = {nameToLink[props.name]}>{props.name}</a>          
-        </span>
+        <section className="componentsUsers">
+                      
+        </section>
     )
 }

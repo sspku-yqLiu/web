@@ -18,14 +18,21 @@ export default class Others extends Component {
                  '222',
                  '333',
                  '<script> alert("hello")</script>'
-             ]
+             ],
+             value:0
         }
     }
-    
+    clicked = ()=>{
+        console.log(this.state.value) // 0
+        this.setState({ value: this.state.value + 1 });
+        console.log(this.state.value) // 1
+        this.setState({ value: this.state.value + 1 });
+        console.log(this.state.value) // 2
+    }
     render() {
         return (
             <div>
-                
+                <button onClick={this.clicked}></button>
             </div>
         )
     }

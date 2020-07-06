@@ -15,16 +15,18 @@ import{ BrowserRouter as Router,Link,Route,Redirect} from 'react-router-dom'
 import WebComponentHelper from './view/WebComponentHelper';
 import Main from './view/Main';
 import Others from './view/Others';
+import MaterialCenter from './view/MaterialCenter';
 
 ReactDOM.render(
   <Router>
     <Route path='/' exact component={Main}></Route>
     {/* <Route path='/others' component={Analysis}></Route> */}
     <Route path='/Extension' component={WebComponentHelper}></Route>
+    <Route path='/MaterialCenter' component={MaterialCenter}></Route>
     <Route path='/npm' component={WebComponentHelper}></Route>
     <Route path='/Search' component={WebComponentHelper}></Route>
     <Route path='/Docs' component={WebComponentHelper}></Route>
-    <Route path='/Others' exact component={WebComponentHelper}></Route>
+    <Route path='/Others' exact component={Others}></Route>
   </Router>,
   document.getElementById('root')
 );

@@ -21,11 +21,11 @@ export default class Myself extends Component {
                         <span>web/nodejs/插件开发</span>
                     </div>
                     <ul>
-                        <li><a href='#'><img src={require("../../asset/img/微信.svg")} /></a></li>
-                        <li><a href='#'><img src={require("../../asset/img/GitHub.svg")} /></a></li>
-                        <li><a href='#'><img src={require("../../asset/img/邮箱.svg")} /></a></li>
-                        <li><a href='#'><img src={require("../../asset/img/BILIBILI_LOGO.svg")} /></a></li>
-                        <li><a href='#'><img src={require("../../asset/img/学位.svg")} /></a></li>
+                        <li><a href='#'><img src={require("../../asset/img/OtherLOGO/微信.svg")} /></a></li>
+                        <li><a href='#'><img src={require("../../asset/img/OtherLOGO/GitHub.svg")} /></a></li>
+                        <li><a href='#'><img src={require("../../asset/img/OtherLOGO/邮箱.svg")} /></a></li>
+                        <li><a href='#'><img src={require("../../asset/img/OtherLOGO/BILIBILI_LOGO.svg")} /></a></li>
+                        <li><a href='#'><img src={require("../../asset/img/OtherLOGO/学位.svg")} /></a></li>
                     </ul>
                 </div>
             </div>

@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import '../../asset/css/CHelper/CHelper.css'
 import  ContentCarousel  from './Carousel'
+import TitleButton from '../util/TitleButton'
 
 export default class Feature extends Component {
     render() {
         return (
+            <div>
             <div className = 'feature'>
                 <b>了解特性</b>
                 <h1><b>在这里,获得最好的组件库使用体验！</b></h1>
@@ -37,14 +39,23 @@ export default class Feature extends Component {
                                 <li>更多的曝光与用户</li>
                             </ul>
                         </div>
-
+                        <TitleButton name="现在使用" bgColor='rgba(0,191, 255, 0.2)'></TitleButton>
                     </div>
 
                     <div className = 'featureRight'>
                         <ContentCarousel/>
-                    </div>
+                    </div> 
                 </div>
-
+            </div>
+            <div className = 'materialCenterIntro'>
+                        <h1><b>不必搜索,在IDE上获取高质量的代码!</b></h1>
+                        <div className='left'>
+                            <TitleButton name="进入物料中心" bgColor='rgba(0,191, 255, 0.2)'></TitleButton>
+                        </div>
+                        <div className="right">
+                            <img src={require('../../asset/img/CH/materialCenterDemo.png')} height='360px'/>
+                        </div>
+            </div>
             </div>
         )
     }

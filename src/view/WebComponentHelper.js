@@ -9,11 +9,11 @@
  import React, { Component } from 'react';
  import { Carousel } from 'antd';
  import TitleButton from '../component/util/TitleButton'
- import '../asset/css/Component.css'
+ import '../asset/css/CHelper/CHelper.css'
 import CHHeader from '../component/ComponentHelper/CHHead';
 import Feature from '../component/ComponentHelper/Feature';
-import MaterialCenter from '../component/ComponentHelper/MaterialCenter';
 import Users from '../component/ComponentHelper/Users';
+import { Footer } from '../component/ComponentHelper/Footer';
  export default class WebComponentHelper extends Component {
      render() {
          return (
@@ -23,17 +23,22 @@ import Users from '../component/ComponentHelper/Users';
                  <div className = "Intro">
                     <h1>DevUIHelper</h1>
                     <h2>The Most Powful VSCode Extension For Components</h2>
+                    
+                    <p align="center" className='badge'>
+                        <a href="https://github.com/sspku-yqLiu/DevUIHelper-LSP"><img src="https://img.shields.io/github/stars/sspku-yqLiu/DevUIHelper-LSP" alt="Github Star"/></a>       
+                        <a href="https://github.com/sspku-yqLiu/DevUIHelper-LSP/blob/master/LICENSE"><img src="https://img.shields.io/github/license/sspku-yqLiu/DevUIHelper-LSP" alt="License"/></a>          
+                        <a href="https://marketplace.visualstudio.com/items?itemName=sspkuDevUI.devuihelper"><img src="https://img.shields.io/badge/InstallCount-169-brightgreen" alt="Document"/></a>
+                        <br/>
+                        <a href="https://github.com/microsoft/vscode-extension-samples"><img src="https://img.shields.io/badge/SupportFrame-Angular-red"/></a>
+                        <a href="https://devui.design/home"><img src="https://img.shields.io/badge/SupportComponentsLib-DevUI-blue"/></a>
+                    
+                    </p>
+
                 </div>
                     <Feature></Feature>
-                    <MaterialCenter/>
                     <Users></Users>
-                    <div className = "users">
-                        <h2>正在使用: </h2>
-
-                    </div>
-
-
-             </div>
+                    <Footer></Footer>
+                </div>
          )
      }   
  }

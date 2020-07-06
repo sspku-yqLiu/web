@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 .titleButton{
-    margin: 25px 75px;
+    margin: 75px 0px;
     padding: 0.5em 2.2em;
     border:none;
     display: block;
@@ -29,7 +29,7 @@
     position: absolute ;
     width: 8%;
     height: 500%;
-    background: antiquewhite;
+    background: transparent;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%) rotate(-60deg);
