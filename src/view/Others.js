@@ -7,6 +7,17 @@
  * @FilePath: \react\web\src\view\Others.js
  */ 
 import React, { Component } from 'react'
+import {IntlProvider, FormattedMessage, createIntl, FormattedDate, FormattedTime} from 'react-intl'
+
+
+const zhCN = {
+    msg:'你好',
+    time: "Time {ts, time}"
+} 
+const en = {
+    msg:'hello'
+}
+const intl = createIntl({locale: 'en', messages: zhCN});
 
 export default class Others extends Component {
     constructor(props) {
@@ -30,10 +41,14 @@ export default class Others extends Component {
         console.log(this.state.value) // 2
     }
     render() {
+        console.log("hi")
+        console.log(intl.formatMessage({id:"msg"}))
         return (
-            <div>
-                <button onClick={this.clicked}></button>
-            </div>
+            <IntlProvider locale="en" messages={zhCN}>
+                <FormattedMessage id="msg"/>
+                <br></br>
+                <FormattedTime id="time" values={{ts: Date.now()}} />
+            </IntlProvider>
         )
     }
 }
